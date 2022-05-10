@@ -14,10 +14,13 @@ module.exports = {
         secondary: '#989898',
         border: '#313232',
         separator_primary: '#B6B6B6',
+        tertiary: '#E4E4E4'
       },
       fontSize: {
+        headline0: ['90px', '81px'],
         headline3: ['38px', '42px'],
         headline4: ['21px', '25px'],
+        description: ['28px', '34px'],
         link: ['15px', '18px'],
         text1: ['16px', '22px'],
         text3: ['12px', '24px'],
