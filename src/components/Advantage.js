@@ -5,7 +5,7 @@ function Advantage() {
   return (
     <div className="bg-tertiary pt-[180px] text-primary">
       <Container>
-        <div className="flex justify-between text-text3 tracking-[0.02em] border-t border-separator_primary">
+        <div className="flex justify-between text-text3 tracking-[0.02em] border-t border-separator_primary pt-2.5">
           <p className="font-bold">ГЛАВНОЕ ПРЕИМУЩЕСТВО КОМПАНИИ</p>
           <p className="text-secondary">#1</p>
         </div>
