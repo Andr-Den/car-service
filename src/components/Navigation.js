@@ -73,7 +73,7 @@ function Navigation() {
               +7 (999) 123-45-67</p>
               <div className="flex space-x-2.5 mt-10">
                 {socialMedia.map(({ src, alt, link }) => (
-                  <a href={link} target="_blank" rel="noreferrer" className="border rounded-full w-[60px] h-[60px] border-border flex justify-center items-center hover:bg-border">
+                  <a href={link} target="_blank" rel="noreferrer" className="border rounded-full w-[60px] h-[60px] border-quaternary flex justify-center items-center hover:bg-quaternary">
                     <img className="w-6 h-6" src={src} alt={alt} key={alt} />
                   </a>
                 ))}

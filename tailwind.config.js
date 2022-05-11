@@ -12,9 +12,10 @@ module.exports = {
         separator: '#EEECEC',
         primary: '#2C2C2C',
         secondary: '#989898',
-        border: '#313232',
+        quaternary: '#313232',
         separator_primary: '#B6B6B6',
-        tertiary: '#E4E4E4'
+        tertiary: '#E4E4E4',
+        current: 'currentColor'
       },
       fontSize: {
         headline0: ['90px', '81px'],

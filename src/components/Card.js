@@ -1,6 +1,6 @@
 import React from 'react';
 
-import arrowRight from '../images/arrow-right.svg'
+import chevronRight from '../images/chevron-right.svg'
 
 function Card({ src, title, subtitle }) {
   return (
@@ -12,7 +12,7 @@ function Card({ src, title, subtitle }) {
           <p className="text-secondary group-hover:text-white">{subtitle}</p>
         </div>
         <div className="bg-accent rounded-full w-[40px] h-[40px] flex justify-center items-center group-hover:bg-primary">
-          <img src={arrowRight} alt="" className="group-hover:fill-white"/>
+          <img src={chevronRight} alt="" className="group-hover:fill-white"/>
         </div>
       </div>
     </div>

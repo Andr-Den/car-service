@@ -7,7 +7,7 @@ import Media from './Media';
 
 function Footer() {
   return (
-    <footer className="bg-border pt-[60px] pb-10 text-white">
+    <footer className="bg-quaternary pt-[60px] pb-10 text-white">
       <Container>
         <div className="flex justify-between">
           <ForComm />
