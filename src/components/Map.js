@@ -6,17 +6,6 @@ import chevronRight from '../images/chevron-right.svg'
 
 import './Map.css'
 
-const items = [
-  {
-    title: 'Екатеринбург, ул. Московский тракт 7 км, 2',
-    subtitle: 'Телефон: '
-  },
-  {
-    title: 'По адресу:',
-    subtitle: 'Екатеринбург, ул. Московский тракт 7 км, 2'
-  },
-]
-
 function Map() {
   return (
     <div className="bg-white h-[468px]">
