@@ -49,7 +49,7 @@ function Hero() {
                 <p>{subtitle}</p>
               </div>
             ))}
-            <button className="px-5 py-3 rounded-md bg-accent text-primary mt-[60px]">Смотреть услуги &darr;</button>
+            <button className="px-5 py-3 rounded-md bg-accent text-primary mt-[60px]"><a href="#services">Смотреть услуги &darr;</a></button>
           </div>
           <Swiper
             className="absolute w-[780px] h-full  top-0"

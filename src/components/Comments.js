@@ -4,7 +4,7 @@ import CommentsSlider from './CommentsSlider';
 
 function Comments() {
   return (
-    <div className="bg-quaternary pt-[180px] text-white relative">
+    <div className="bg-quaternary pt-[180px] pb-[492px] text-white relative">
       <Container>
         <div className="flex justify-between pb-[60px] border-b border-separator_primary">
           <h2 className="text-headline1">Отзывы пользователей<br/>об Автоцентре</h2>
@@ -13,7 +13,7 @@ function Comments() {
             <p className="text-text3 tracking-[0.02em] font-bold text-secondary">СРЕДНЯЯ ОЦЕНКА</p>
           </div>
         </div>
-        <div className="flex justify-end relative">
+        <div className="relative flex justify-end">
           <CommentsSlider />
         </div>
       </Container>

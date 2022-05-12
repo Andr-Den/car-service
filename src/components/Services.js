@@ -32,7 +32,7 @@ const cards =[
 
 function Services() {
   return (
-    <div className="bg-tertiary pt-[180px] text-primary">
+    <div className="bg-tertiary pt-[180px] text-primary" id="services">
       <Container>
         <h2 className="text-headline1">Услуги автосервиса</h2>
         <ul className='grid grid-cols-2 gap-10 pt-[60px]'>
