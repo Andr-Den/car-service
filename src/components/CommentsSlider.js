@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import rating4 from '../images/Rating4.svg'
+import rating5 from '../images/rating5.svg'
 import user from '../images/User.jpg'
 import arrowRight from '../images/arrow-right.svg'
 import arrowLeft from '../images/arrow-left.svg'
@@ -25,7 +26,7 @@ const items = [
     src: user,
     name: 'butyl1n_i',
     date: '23 декабря 2020',
-    rate: '',
+    rate: rating5,
     text: `Отличный сервис. Спасибо большое менеджеру Александру, помог и разъяснил (грамотно). 
       Самое главное нашел причину и устранил . Не первый раз обращаюсь и пока всем доволен (обращался 01.06.2018г). 
       Немного о самом сервисе. Клиентская зона на твердую 5 . Есть чай и кофе, и пока делают машину, можно занять себя просмотром телевизора. 
