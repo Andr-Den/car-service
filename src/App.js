@@ -1,6 +1,7 @@
 import Advantage from './components/Advantage';
 import Comments from './components/Comments';
 import Header from './components/Header';
+import Hero from './components/Hero';
 import Footer from './components/Footer';
 import Services from './components/Services';
 import Stocks from './components/Stocks';
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <Header />
+      <Hero />
       <Advantage />
       <Services />
       <Theses />
