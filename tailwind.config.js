@@ -20,6 +20,7 @@ module.exports = {
       fontSize: {
         headline0: ['90px', '81px'],
         headline1: ['67px', '64px'],
+        headline2: ['51px', '54px'],
         headline3: ['38px', '42px'],
         headline4: ['21px', '25px'],
         description: ['28px', '34px'],
