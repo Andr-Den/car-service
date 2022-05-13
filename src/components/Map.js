@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "./Container";
 
 import image from '../images/Image1.png'
 import chevronRight from '../images/chevron-right.svg'
@@ -8,8 +7,8 @@ import './Map.css'
 
 function Map() {
   return (
-    <div className="bg-white h-[468px] relative  mx-auto max-w-[1340px]">
-        <div className="absolute flex -top-[312px] lg:flex-col-reverse lg:top-0">
+    <div className="bg-white h-[468px] relative  mx-auto max-w-[1340px] lg:h-[884px] xs:h-[660px]">
+        <div className="absolute flex -top-[312px] lg:flex-col-reverse lg:top-0 lg:static">
           <div className="text-white bg-quaternary">
             <img src={image} alt="" className="w-[420px] h-[312px] lg:hidden"/>
               <div className="p-10">
