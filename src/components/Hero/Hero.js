@@ -1,13 +1,14 @@
 import React from 'react';
-import Container from './Container';
+import Container from '../Container';
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import arrowRight from '../images/arrow-right.svg'
-import arrowLeft from '../images/arrow-left.svg'
-import image1 from '../images/Image1.png'
-import image2 from '../images/Image2.png'
-import image3 from '../images/Image3.png'
+import ArrowLeft from '../shared/ArrowLeft'
+import ArrowRight from '../shared/ArrowRight';
+
+import image1 from '../../images/Image1.png'
+import image2 from '../../images/Image2.png'
+import image3 from '../../images/Image3.png'
 
 import './Hero.css'
 
@@ -70,11 +71,11 @@ function Hero() {
                 <img src={src} alt="" className="relative"/>
                 <p className="absolute bottom-[68px] right-[130px] text-headline3">{index}/3</p>
                 <div className="flex space-x-[5px] absolute bottom-[60px] left-10">
-                  <div className="hero-prev-button bg-accent rounded-full w-[40px] h-[40px] flex justify-center items-center hover:cursor-pointer">
-                    <img src={arrowLeft} alt="предыдущий слайд"/>
+                  <div className="hero-prev-button bg-accent rounded-full w-[60px] h-[60px] flex justify-center items-center hover:cursor-pointer hover:bg-white">
+                    <ArrowLeft className="stroke-primary"/>
                   </div>
-                  <div className="hero-next-button bg-accent rounded-full w-[40px] h-[40px] flex justify-center items-center hover:cursor-pointer">
-                    <img src={arrowRight} alt="следующий слайд"/>
+                  <div className="hero-next-button bg-accent rounded-full w-[60px] h-[60px] flex justify-center items-center hover:cursor-pointer  hover:bg-white">
+                    <ArrowRight className="stroke-primary"/>
                   </div>
                 </div>
               </SwiperSlide>

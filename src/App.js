@@ -5,7 +5,7 @@ import Advice from './components/Advice';
 import Comments from './components/Comments';
 import Companies from './components/Companies';
 import Header from './components/Header';
-import Hero from './components/Hero';
+import Hero from './components/Hero/Hero';
 import Feedback from './components/Feedback'
 import Footer from './components/Footer';
 import Map from './components/Map';

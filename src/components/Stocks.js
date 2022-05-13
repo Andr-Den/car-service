@@ -3,11 +3,12 @@ import Container from './Container';
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import ArrowLeft from './shared/ArrowLeft';
+import ArrowRight from './shared/ArrowRight';
+import ChevronRight from './shared/ChevronRight';
+
 import car from '../images/Car.jpg'
 import prew from '../images/Prew.jpg'
-import arrowRight from '../images/arrow-right.svg'
-import arrowLeft from '../images/arrow-left.svg'
-import chevronRight from '../images/chevron-right.svg'
 
 const items = [
   {
@@ -45,17 +46,17 @@ function Stocks() {
                       <h3 className="text-headline2">{text}</h3>
                       <p className="mt-5 text-text1 text-secondary">{date}</p>
                       <div className="flex items-center mt-10 space-x-2.5">
-                        <div className="bg-accent rounded-full w-[40px] h-[40px] flex justify-center items-center hover:bg-primary hover:cursor-pointer">
-                          <img src={chevronRight} alt="" className="group-hover:fill-white"/>
+                        <div className="bg-accent rounded-full w-[40px] h-[40px] flex justify-center items-center hover:bg-primary hover:cursor-pointer group">
+                          <ChevronRight className="stroke-black group-hover:stroke-white"/>
                         </div>
                         <p>Подробнее</p>
                       </div>
                       <div className="flex space-x-[5px] absolute bottom-0">
-                        <div className="stocks-prev-button border-white border rounded-full w-[40px] h-[40px] flex justify-center items-center hover:cursor-pointer">
-                          <img src={arrowLeft} alt="предыдущий слайд"/>
+                        <div className="stocks-prev-button border-primary border rounded-full w-[60px] h-[60px] flex justify-center items-center hover:cursor-pointer hover:bg-primary group">
+                          <ArrowLeft className="stroke-primary group-hover:stroke-white"/>
                         </div>
-                        <div className="stocks-next-button border border-white rounded-full w-[40px] h-[40px] flex justify-center items-center hover:cursor-pointer">
-                          <img src={arrowRight} alt="следующий слайд"/>
+                        <div className="stocks-next-button border border-primary rounded-full w-[60px] h-[60px] flex justify-center items-center hover:cursor-pointer hover:bg-primary group">
+                          <ArrowRight className="stroke-primary group-hover:stroke-white"/>
                         </div>
                       </div>
                     </div>

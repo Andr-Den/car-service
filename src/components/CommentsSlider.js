@@ -5,12 +5,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/navigation";
 
+import ArrowLeft from './shared/ArrowLeft';
+import ArrowRight from './shared/ArrowRight';
+
 import rating4 from '../images/Rating4.svg'
 import rating5 from '../images/rating5.svg'
 import user from '../images/User.jpg'
-import arrowRight from '../images/arrow-right.svg'
-import arrowLeft from '../images/arrow-left.svg'
-
 
 const items = [
   {
@@ -58,11 +58,13 @@ function CommentsSlider() {
                   </div>
                 </div>
                 <div className="flex space-x-[5px] absolute top-0 right-0">
-                  <div className="comments-prev-button border-white border bg-quaternary rounded-full w-[40px] h-[40px] flex justify-center items-center hover:cursor-pointer">
-                    <img src={arrowLeft} alt="предыдущий слайд"/>
+                  <div className="comments-prev-button border-white border bg-quaternary rounded-full w-[60px] h-[60px] 
+                      flex justify-center items-center hover:cursor-pointer hover:bg-white group">
+                    <ArrowLeft className="stroke-white group-hover:stroke-primary"/>
                   </div>
-                  <div className="comments-next-button border bg-quaternary border-white rounded-full w-[40px] h-[40px] flex justify-center items-center hover:cursor-pointer">
-                    <img src={arrowRight} alt="следующий слайд"/>
+                  <div className="comments-next-button border bg-quaternary border-white rounded-full w-[60px] h-[60px]
+                      flex justify-center items-center hover:cursor-pointer hover:bg-white group">
+                    <ArrowRight  className="stroke-white group-hover:stroke-primary"/>
                   </div>
                 </div>
                 <p className="pt-10 text-justify text-description">{text}</p>
