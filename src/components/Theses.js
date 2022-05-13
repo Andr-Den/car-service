@@ -35,7 +35,7 @@ function Theses() {
       <Container>
         <div className="flex justify-between lg:flex-col lg:space-y-10">
           <div className="max-w-[650px] space-y-10">
-            <p className="text-description lg:text-tablet_description xs:text-mobile3">
+            <p className="text-description lg:text-tablet_description xs:text-headline4">
               Обратившись к нам, в автоцентр, вы окажетесь в надёжных руках специалистов 
               послегарантийного ремонта и технического обслуживания автомобилей.
             </p>

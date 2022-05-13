@@ -36,7 +36,7 @@ const items = [
 
 function CommentsSlider() {
   return (
-    <div className="w-[880px] flex">
+    <div className="w-[880px] flex lg:w-[640px] xs:w-[345px]">
         <Swiper
           className="mt-10"
           modules={[Navigation]}
@@ -50,7 +50,7 @@ function CommentsSlider() {
           {items.map(({ src, name, text, date, rate }) => (
             <SwiperSlide key={text}>
                 <div className="relative flex">
-                  <img src={src} alt="" className="w-[60px] h-[60px] rounded-full"/>
+                  <img src={src} alt="" className="w-[60px] h-[60px] rounded-full xs:w-[50px] xs:h-[50px]"/>
                   <div className="flex flex-col justify-start pl-4">
                     <p className="text-headline4">{name}</p>
                     <p className="text-sm text-secondary">{date}</p>
@@ -59,15 +59,15 @@ function CommentsSlider() {
                 </div>
                 <div className="flex space-x-[5px] absolute top-0 right-0">
                   <div className="comments-prev-button border-white border bg-quaternary rounded-full w-[60px] h-[60px] 
-                      flex justify-center items-center hover:cursor-pointer hover:bg-white group">
+                      flex justify-center items-center hover:cursor-pointer hover:bg-white group xs:w-[50px] xs:h-[50px]">
                     <ArrowLeft className="stroke-white group-hover:stroke-primary"/>
                   </div>
                   <div className="comments-next-button border bg-quaternary border-white rounded-full w-[60px] h-[60px]
-                      flex justify-center items-center hover:cursor-pointer hover:bg-white group">
+                      flex justify-center items-center hover:cursor-pointer hover:bg-white group xs:w-[50px] xs:h-[50px]">
                     <ArrowRight  className="stroke-white group-hover:stroke-primary"/>
                   </div>
                 </div>
-                <p className="pt-10 text-justify text-description">{text}</p>
+                <p className="pt-10 text-justify text-description lg:text-tablet_description -tracking-[0.01em] xs:text-headline4">{text}</p>
             </SwiperSlide>
           ))}
         </Swiper>
