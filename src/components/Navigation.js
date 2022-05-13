@@ -18,14 +18,6 @@ const CentersItems = [
   'Кузовной ремонт и детейлинг'
 ];
 
-const services = [
-  'О компании',
-  'Гарантии',
-  'Новости',
-  'Акции',
-  'Контакты',
-];
-
 function Navigation() {
 
   return (

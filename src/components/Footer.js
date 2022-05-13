@@ -5,8 +5,6 @@ import Links from './Links';
 import Lists from './Lists';
 import Media from './Media';
 
-import './Footer.css'
-
 function Footer() {
   return (
     <footer className="bg-quaternary pt-[60px] pb-10 text-white">

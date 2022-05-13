@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Lists.css'
+
 const services = [
   'Ремонт автомобиля',
   'Плановое ТО',
@@ -26,7 +28,7 @@ function Lists() {
         <ul className="relative flex flex-col space-y-2.5 my-5 text-link">
             {CentersItems.map((name) => (
               <li key={name}>
-                <span>{name}</span>
+                <span className="link">{name}</span>
               </li>
             ))}
         </ul>
@@ -36,7 +38,7 @@ function Lists() {
         <ul className="relative flex flex-col space-y-2.5 my-5 text-link">
             {services.map((name) => (
               <li key={name}>
-                <span>{name}</span>
+                <span className="link">{name}</span>
               </li>
             ))}
         </ul>
