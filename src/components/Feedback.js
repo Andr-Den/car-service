@@ -6,9 +6,9 @@ import chevronRight from '../images/chevron-right.svg'
 function Feedback({ onClose }) {
   return (
     <div className="fixed top-0 left-0 z-50 flex justify-end w-full h-full bg-primary text-primary">
-      <button className="bg-accent w-[100px] h-[100px] flex items-center justify-center" onClick={onClose}><img src={close} alt="" /></button>
       <div className="w-full h-full max-w-[800px] bg-white opacity-100 px-[60px] pt-[100px]">
-        <h4 className="text-headline3">Перезвоним в течении часа</h4>
+      <button className="bg-accent w-[100px] h-[100px] flex items-center justify-center absolute lg:top-0 lg:right-0" onClick={onClose}><img src={close} alt="" /></button>
+        <h4 className="mt-10 text-headline3">Перезвоним в течении часа</h4>
         <form>
           <fieldset className="flex flex-col w-[680px] space-y-5 mt-10">
             <input type="text" placeholder="Ваше имя *" className="border rounded-lg border-secondary py-2.5 px-7 h-[60px] placeholder:text-primary"/>

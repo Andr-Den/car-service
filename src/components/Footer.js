@@ -18,8 +18,10 @@ function Footer() {
         </div>
         <Media />
         <div className="flex justify-between pt-10 text-sm text-separator_primary">
-          <p>&copy; 2022 Специализированный автоцентр</p>
-          <p>Дизайн и разработка - <a href="https://media-army.ru" className="text-white">Media Army</a></p>
+          <p className="sm:hidden">&copy; 2022 Специализированный автоцентр</p>
+          <p className="hidden sm:block">&copy;  2022. Спец. автоцентр</p>
+          <p className="sm:hidden">Дизайн и разработка - <a href="https://media-army.ru" className="text-white">Media Army</a></p>
+          <p  className="hidden sm:block">Сайт от - <a href="https://media-army.ru" className="text-white">Media Army</a></p>
         </div>
       </Container>
     </footer> 
