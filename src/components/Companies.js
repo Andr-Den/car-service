@@ -73,14 +73,14 @@ const logos = [
 
 function Companies() {
   return (
-    <div className="bg-tertiary pt-[180px] overflow-hidden">
+    <div className="bg-tertiary pt-[180px] overflow-hidden lg:pt-[120px] xs:pt-10">
       <Container>
-        <p className="text-text3 text-secondary">ОБСЛУЖИВАЕМ И РЕМОНТИРУЕМ</p>
+        <p className="font-bold text-text3 text-secondary lg:text-text3 tracking-[0.02em]">ОБСЛУЖИВАЕМ И РЕМОНТИРУЕМ</p>
       </Container>
       <div className="relative mt-[60px]">
             <ul className="flex float-left slider">
               {logos.map(({ src, alt }) => (
-                <div className="border-white border rounded-full w-[300px] h-[300px] flex items-center justify-center -mx-5">
+                <div className="border-white border rounded-full w-[300px] h-[300px] flex items-center justify-center -mx-5 lg:w-[230px] lg:h-[230px] xs:w-[190px] xs:h-[190px]">
                   <img src={src} alt={alt} className="grayscale"/>
                 </div>
               ))}
