@@ -40,7 +40,7 @@ const items = [
 
 function Hero() {
   return (
-    <div className="text-white bg-quaternary relative z-10 h-[590px]">
+    <div className="text-white bg-quaternary relative z-10 h-[590px] lg:h-[1128px]">
       <Container>
         <div className="relative flex space-x-10">
           <div className="pt-20">
@@ -71,8 +71,8 @@ function Hero() {
             {images.map(({ src, index }) => (
               <SwiperSlide key={index}>
                 <img src={src} alt="" className="relative"/>
-                <p className="absolute bottom-[68px] right-[130px] text-headline3 sm:bottom-[242px] sm:right-[15px] sm:text-mobile3">{index}/3</p>
-                <div className="flex space-x-[5px] absolute bottom-[60px] left-10 sm:bottom-[233px] sm:left-[15px]">
+                <p className="absolute bottom-[68px] right-[130px] text-headline3 lg:bottom-[500px] lg:right-[52px] sm:bottom-[242px] sm:right-[15px] sm:text-mobile3">{index}/3</p>
+                <div className="flex space-x-[5px] absolute bottom-[60px] left-10 lg:bottom-[490px] sm:bottom-[233px] sm:left-[15px]">
                   <div className="hero-prev-button bg-accent rounded-full w-[60px] h-[60px] flex justify-center items-center hover:cursor-pointer hover:bg-white sm:w-[50px] sm:h-[50px]">
                     <ArrowLeft className="stroke-primary"/>
                   </div>
