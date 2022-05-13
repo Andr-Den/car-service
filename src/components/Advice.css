@@ -1,0 +1,8 @@
+.wrapper {
+  background-image: url(../images/background.png);
+  width: 100vw;
+  height: 690px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
