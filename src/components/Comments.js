@@ -4,7 +4,7 @@ import CommentsSlider from './CommentsSlider';
 
 function Comments() {
   return (
-    <div className="bg-quaternary pt-[180px] pb-[492px] text-white relative lg:pt-[120px] xs:pt-[100px]">
+    <div className="bg-quaternary pt-[180px] pb-[492px] text-white relative lg:pt-[120px] lg:pb-[120px] xs:pt-[100px]">
       <Container>
         <div className="flex justify-between pb-[60px] border-b border-separator_primary  lg:flex-col lg:pb-10">
           <h2 className="text-headline1 lg:text-tablet1 xs:text-mobile1">Отзывы пользователей<br/>об Автоцентре</h2>
