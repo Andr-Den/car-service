@@ -24,7 +24,7 @@ function Map() {
             className="w-[920px] h-[600px] lg:w-[744px] xs:w-[375px] xs:h-[375px]"
             title="Map"
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A3bd7da24e013a36dd8934e0ac2296304cdbfebc8768f1e16e7294e652fa8d013&amp;source=constructor" 
-            frameborder="0">
+            frameBorder="0">
           </iframe>
         </div>
     </div>

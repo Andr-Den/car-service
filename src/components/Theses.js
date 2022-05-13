@@ -49,8 +49,8 @@ function Theses() {
             </div>
           </div>
           <ul className='grid grid-cols-2 gap-10 w-[650px] xs:w-[345px]'>
-            {icons.map(({ src, alt, description }) => (
-              <li>
+            {icons.map(({ src, alt, description }, id) => (
+              <li key={id}>
                 <img src={src} alt={alt} />
                 <div className="pt-5 lg:text-mobile4 xs:text-sm" dangerouslySetInnerHTML={{ __html: description }} />
               </li>
