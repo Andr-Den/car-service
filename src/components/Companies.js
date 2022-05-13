@@ -79,8 +79,8 @@ function Companies() {
       </Container>
       <div className="relative mt-[60px]">
             <ul className="flex float-left slider">
-              {logos.map(({ src, alt }) => (
-                <div className="border-white border rounded-full w-[300px] h-[300px] flex items-center justify-center -mx-5 lg:w-[230px] lg:h-[230px] xs:w-[190px] xs:h-[190px]">
+              {logos.map(({ src, alt }, id) => (
+                <div className="border-white border rounded-full w-[300px] h-[300px] flex items-center justify-center -mx-5 lg:w-[230px] lg:h-[230px] xs:w-[190px] xs:h-[190px]" key={id}>
                   <img src={src} alt={alt} className="grayscale"/>
                 </div>
               ))}

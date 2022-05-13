@@ -36,8 +36,8 @@ function Services() {
       <Container>
         <h2 className="text-headline1 lg:text-mobile1">Услуги автосервиса</h2>
         <ul className='grid grid-cols-2 gap-10 pt-[60px] lg:gap-5 sm:grid-cols-1'>
-          {cards.map(({ src, title, subtitle }) => (
-            <Card src={src} title={title} subtitle={subtitle} />
+          {cards.map(({ src, title, subtitle }, id) => (
+            <Card src={src} title={title} subtitle={subtitle} key={id} />
           ))}
         </ul>
       </Container>

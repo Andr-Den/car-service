@@ -52,8 +52,8 @@ function Media() {
         </a>
       </div>
       <div className="flex justify-between w-[880px] lg:justify-start  lg:w-[640px] lg:mt-5 xs:justify-around  xs:w-[345px] xs:space-x-0 space-x-10">
-        {addresses.map(({name, address}) => (
-          <div className="flex flex-col w-[420px]">
+        {addresses.map(({name, address}, id) => (
+          <div className="flex flex-col w-[420px]" key={id}>
             <p className="text-text3 tracking-[0.02em] font-bold xs:text-mobile3">{name}</p>
             <p className="text-sm text-secondary w-72 xs:w-[170px]">{address}</p>
           </div>
