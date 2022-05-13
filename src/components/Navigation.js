@@ -1,34 +1,15 @@
 import React from 'react';
 import Container from './Container';
+import YouTube from './shared/YouTube';
+import VK from './shared/VK';
+import Twitter from './shared/Twitter';
+import Instagram from './shared/Instagram';
 
 import vk from '../images/VK.svg';
 import twitter from '../images/twitter.svg';
 import youtube from '../images/youtube.svg';
 import instagram from '../images/instagram.svg';
 import icon from '../images/Icon.svg';
-
-const socialMedia = [
-  {
-    src: vk,
-    alt: 'логотип вконтакте',
-    link: 'https://vk.com'
-  },
-  {
-    src: instagram,
-    alt: 'логотип instagram',
-    link: 'https://instagram.com'
-  },
-  {
-    src: twitter,
-    alt: 'логотип twitter',
-    link: 'https://twitter.com'
-  },
-  {
-    src: youtube,
-    alt: 'логотип youtube',
-    link: 'https://youtube.com'
-  }
-]
 
 const CentersItems = [
   'Автоцентр Volvo',
@@ -42,7 +23,7 @@ const CentersItems = [
 function Navigation() {
 
   return (
-    <div className="absolute z-50 w-screen pb-10 bg-white border-t border-accent h-5/6">
+    <div className="absolute z-50 w-screen py-10 bg-white border-t border-accent">
       <Container>
         <div className="grid grid-cols-2 mt-10">
           <div className="space-y-5">
@@ -72,11 +53,38 @@ function Navigation() {
             <p className="text-secondary w-[310px] text-sm">Екатеринбург, ул. Московский тракт 7 км, 2
               +7 (999) 123-45-67</p>
               <div className="flex space-x-2.5 mt-10">
-                {socialMedia.map(({ src, alt, link }) => (
-                  <a href={link} target="_blank" rel="noreferrer" className="border rounded-full w-[60px] h-[60px] border-quaternary flex justify-center items-center hover:bg-quaternary">
-                    <img className="w-6 h-6" src={src} alt={alt} key={alt} />
-                  </a>
-                ))}
+                <a 
+                  href="https://vk.com"
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="w-[60px] h-[60px] border rounded-full flex justify-center items-center group hover:bg-primary border-primary"
+                >
+                  <VK className="stroke-primary group-hover:stroke-white"/>
+                </a>
+                <a 
+                  href="https://instagram.com'" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="w-[60px] h-[60px] border rounded-full flex justify-center items-center group hover:bg-primary border-primary"
+                >
+                  <Instagram className="stroke-primary group-hover:stroke-white"/>
+                </a>
+                <a 
+                  href="https://twitter.com"
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="w-[60px] h-[60px] border rounded-full flex justify-center items-center group hover:bg-primary border-primary"
+                >
+                  <Twitter className="stroke-primary group-hover:stroke-white"/>
+                </a>
+                <a 
+                  href="https://youtube.com" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="w-[60px] h-[60px] border rounded-full flex justify-center items-center group hover:bg-primary border-primary"
+                >
+                  <YouTube className="stroke-primary group-hover:stroke-white"/>
+                </a>
               </div>
           </div>
           <a href='*' className="self-end text-link">Условия конфиденциальности</a>
