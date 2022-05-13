@@ -31,15 +31,15 @@ const icons =[
 
 function Theses() {
   return (
-    <div className="bg-tertiary pt-[180px] text-primary">
+    <div className="bg-tertiary pt-[180px] text-primary lg:pt-[120px] xs:pt-[100px]">
       <Container>
-        <div className="flex justify-between">
+        <div className="flex justify-between lg:flex-col lg:space-y-10">
           <div className="max-w-[650px] space-y-10">
-            <p className="text-description">
+            <p className="text-description lg:text-tablet_description xs:text-mobile3">
               Обратившись к нам, в автоцентр, вы окажетесь в надёжных руках специалистов 
               послегарантийного ремонта и технического обслуживания автомобилей.
             </p>
-            <div className="text-text1 w-[420px] space-y-5">
+            <div className="text-text1 w-[420px] space-y-5 lg:w-[640px] xs:text-sm xs:w-[345px]">
               <p>
                 Чтобы автомобиль всегда оставался в отличной форме, необходимо выполнять регулярное ТО по программе рекомендованной производителем.
               </p>
@@ -48,11 +48,11 @@ function Theses() {
               </p>
             </div>
           </div>
-          <ul className='grid grid-cols-2 gap-10 w-[650px]'>
+          <ul className='grid grid-cols-2 gap-10 w-[650px] xs:w-[345px]'>
             {icons.map(({ src, alt, description }) => (
               <li>
                 <img src={src} alt={alt} />
-                <div className="pt-5" dangerouslySetInnerHTML={{ __html: description }} />
+                <div className="pt-5 lg:text-mobile4 xs:text-sm" dangerouslySetInnerHTML={{ __html: description }} />
               </li>
             ))}
           </ul>
