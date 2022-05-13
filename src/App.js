@@ -10,6 +10,7 @@ import Feedback from './components/Feedback'
 import Footer from './components/Footer';
 import Map from './components/Map';
 import MobApp from './components/MobApp';
+import Registration from './components/Registration';
 import Services from './components/Services';
 import Stocks from './components/Stocks';
 import Theses from './components/Theses';
@@ -18,6 +19,7 @@ import './App.css'
 
 function App() {
   const [openFeedback, setOpenFeedback] = React.useState(false);
+  const [openRegistration, setOpenRegistration] = React.useState(false);
 
   function handleOpenFeedback() {
     setOpenFeedback(true) 
@@ -27,9 +29,17 @@ function App() {
     setOpenFeedback(false) 
   }
 
+  function handleOpenRegistration() {
+    setOpenRegistration(true) 
+  }
+
+  function handleCloseRegistration() {
+    setOpenRegistration(false) 
+  }
+
   return (
     <>
-      <Header />
+      <Header onClick={handleOpenRegistration}/>
       <Hero />
       <Advantage />
       <Services />
@@ -42,6 +52,7 @@ function App() {
       <MobApp />
       <Footer />
       { openFeedback ? <Feedback onClose={handleCloseFeedback}/> : ''}
+      { openRegistration ? <Registration onClose={handleCloseRegistration}/> : ''}
     </>
   );
 }
