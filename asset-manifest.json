@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.84efff2e.css",
+    "main.js": "/static/js/main.e76b1c02.js",
+    "static/js/787.0ca4bb88.chunk.js": "/static/js/787.0ca4bb88.chunk.js",
+    "static/media/TO.jpg": "/static/media/TO.01fadba3bbe14ebcb3e8.jpg",
+    "static/media/repare.jpg": "/static/media/repare.8a45b2c3c4cdfa9d8297.jpg",
+    "static/media/tuning.jpg": "/static/media/tuning.8340f941913a370ba834.jpg",
+    "static/media/diagnostics.jpg": "/static/media/diagnostics.6c90ada50e37d165ff19.jpg",
+    "static/media/ArialNova.woff": "/static/media/ArialNova.9b00a1fe7f9399446589.woff",
+    "static/media/ArialNova-Bold.woff": "/static/media/ArialNova-Bold.1c9adbd3c623b745685a.woff",
+    "static/media/ArialNova.woff2": "/static/media/ArialNova.3a1bd2be6ed2dae8a4cb.woff2",
+    "static/media/ArialNova-Bold.woff2": "/static/media/ArialNova-Bold.f772d4f4cc32bdbda347.woff2",
+    "static/media/logo.svg": "/static/media/logo.0f30324639df315786ab250232719be2.svg",
+    "static/media/car.svg": "/static/media/car.9b8ae9e96b1e89fd14b16165b9afbade.svg",
+    "static/media/Rating4.svg": "/static/media/Rating4.18b26f2875b0deeedfc8eaa48befd635.svg",
+    "static/media/cup.svg": "/static/media/cup.9e716f757d12a70547738c2bf74f7081.svg",
+    "static/media/person.svg": "/static/media/person.189047147fba9ba75d15f26d64858062.svg",
+    "static/media/shield.svg": "/static/media/shield.7ea14ed09dd5c6e310d2b17d40dffb4a.svg",
+    "static/media/VK.svg": "/static/media/VK.55da7e9e616360f88edf9820ab076d54.svg",
+    "index.html": "/index.html",
+    "static/media/twitter.svg": "/static/media/twitter.7f0c203c349b0f9a453d904f8c37e039.svg",
+    "static/media/instagram.svg": "/static/media/instagram.4daa81ddc475dd7542b0f8ae9a9922f8.svg",
+    "static/media/youtube.svg": "/static/media/youtube.74cf668d6e1d6b8bd01ce2d5ce149e99.svg",
+    "static/media/Icon.svg": "/static/media/Icon.aed716a5ca589f00e486a760eec4237b.svg",
+    "static/media/arrow-right.svg": "/static/media/arrow-right.627e5172dba304a09f4c22bfee6d98b4.svg",
+    "static/media/arrow-left.svg": "/static/media/arrow-left.8c1fe18d07a0c0f5bf63e969436248d1.svg",
+    "static/media/burger.svg": "/static/media/burger.63a717d7dae14e15e623a113058663de.svg",
+    "static/media/close.svg": "/static/media/close.f2f4266bc56e9a4fe0fe320dc7772647.svg",
+    "static/media/chevron-right.svg": "/static/media/chevron-right.851fddd71ab2dbce7aed96d9dd2862bb.svg",
+    "static/media/arrow.svg": "/static/media/arrow.5f02ef06f77ef6644e9076f70111d281.svg",
+    "main.84efff2e.css.map": "/static/css/main.84efff2e.css.map",
+    "main.e76b1c02.js.map": "/static/js/main.e76b1c02.js.map",
+    "787.0ca4bb88.chunk.js.map": "/static/js/787.0ca4bb88.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84efff2e.css",
+    "static/js/main.e76b1c02.js"
+  ]
+}
