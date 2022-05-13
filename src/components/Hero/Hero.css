@@ -6,6 +6,11 @@
   right: 0;
 }
 
-.arrows-filter {
-  stroke: black; 
+@media screen and (max-width: 1599px){
+  .slider-wrapper {
+    padding-top: 60px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
 }
