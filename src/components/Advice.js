@@ -5,7 +5,7 @@ import chevronRight from '../images/chevron-right.svg'
 
 import './Advice.css'
 
-function Advice() {
+function Advice({ onClick }) {
   return (
     <div className="text-white wrapper">
       <div className="pt-[180px]">
@@ -17,7 +17,7 @@ function Advice() {
               произведет предварительную оценку стоимости услуг и запчастей, 
               и подберет удобное время для визита.
             </p>
-            <button className="flex px-5 py-3 mt-10 rounded-md bg-accent text-primary hover:cursor-pointer">Оставить заявку <img src={chevronRight} alt="" /></button>
+            <button className="flex px-5 py-3 mt-10 rounded-md bg-accent text-primary" onClick={onClick}>Оставить заявку <img src={chevronRight} alt="" /></button>
           </div>
         </Container>
       </div>
