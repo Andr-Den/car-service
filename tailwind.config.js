@@ -7,6 +7,12 @@ module.exports = {
       fontFamily: {
         sans: ['"Arial Nova"', ...defaultTheme.fontFamily.sans]
       },
+      screens: {
+        lg: { max: '1045px' },
+        md: { max: '767px' },
+        sm: { max: '495px' },
+        xs: { max: '413px' },
+      },
       colors: {
         accent: '#FEC110',
         separator: '#EEECEC',
@@ -27,6 +33,14 @@ module.exports = {
         link: ['15px', '18px'],
         text1: ['16px', '22px'],
         text3: ['12px', '24px'],
+        tablet0: ['68px', '61px'],
+        tablet1: ['44px', '42px'],
+        tablet_description: ['24px', '29px'],
+        mobile0: ['58px', '52px'],
+        mobile1: ['34px', '32px'],
+        mobile2: ['28px', '29px'],
+        mobile3: ['10px', '20px'],
+        mobile4: ['18px', '22px']
       }
     },
   },

@@ -8,11 +8,11 @@ import './Advice.css'
 function Advice({ onClick }) {
   return (
     <div className="text-white wrapper">
-      <div className="pt-[180px]">
+      <div className="pt-[180px] lg:pt-[120px] xs:pt-10">
         <Container>
           <p className="text-text3  border-white border-t pt-2.5">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</p>
-          <div className=" w-[650px] float-right mt-[60px]">
-            <p className="text-description">
+          <div className=" w-[650px] float-right mt-[60px] xs:w-[345px] xs:mt-[50px]">
+            <p className="text-description lg:text-tablet_description xs:text-headline4">
               Оставьте заявку, и наш мастер перезвонит вам,
               произведет предварительную оценку стоимости услуг и запчастей, 
               и подберет удобное время для визита.
