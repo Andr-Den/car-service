@@ -32,10 +32,10 @@ const cards =[
 
 function Services() {
   return (
-    <div className="bg-tertiary pt-[180px] text-primary" id="services">
+    <div className="bg-tertiary pt-[180px] text-primary lg:pt-[120px]" id="services">
       <Container>
-        <h2 className="text-headline1">Услуги автосервиса</h2>
-        <ul className='grid grid-cols-2 gap-10 pt-[60px]'>
+        <h2 className="text-headline1 lg:text-mobile1">Услуги автосервиса</h2>
+        <ul className='grid grid-cols-2 gap-10 pt-[60px] lg:gap-5 sm:grid-cols-1'>
           {cards.map(({ src, title, subtitle }) => (
             <Card src={src} title={title} subtitle={subtitle} />
           ))}
