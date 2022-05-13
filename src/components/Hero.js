@@ -37,7 +37,7 @@ const items = [
 
 function Hero() {
   return (
-    <div className="text-white pb-[60px] bg-quaternary relative">
+    <div className="text-white pb-[60px] bg-quaternary relative z-10">
       <Container>
         <div className="relative flex space-x-10">
           <div className="pt-20">

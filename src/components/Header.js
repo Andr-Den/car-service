@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from './Container';
+import DropMenu from './DropMenu';
 import Navigation from './Navigation';
 
 import arrow from '../images/arrow.svg';
@@ -7,21 +8,12 @@ import burger from '../images/burger.svg';
 import close from '../images/close.svg';
 import logo from '../images/logo.svg';
 
-import './Header.css'
-
 const HeaderItems = [
   'О компании',
   'Гарантии',
   'Новости',
   'Акции',
   'Контакты',
-];
-
-const services = [
-  'Ремонт автомобиля',
-  'Плановое ТО',
-  'Диагностика и ремонт',
-  'Чип тюнинг',
 ];
 
 function Header({ onClick }) {
@@ -37,19 +29,12 @@ function Header({ onClick }) {
       <Container>
         <nav className="relative flex items-center justify-between" aria-label="Global">
           <img src={logo} alt=""/>
-          <div className="relative flex items-center space-x-10 test">
-            <div className="flex space-x-1 group list">
+          <div className="relative flex items-center space-x-10 overflow-visible">
+            <div className="relative flex space-x-1 peer group">
               <span>Услуги</span>
               <img src={arrow} alt="" className="group-hover:rotate-180"/>
-              <ul className="pt-10 space-y-4 text-primary text-headline4 popup">
-                {services.map((name) => (
-                  <li key={name}>
-                    <span>{name}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
-            <div className="border-line"></div>
+            <DropMenu className="absolute border-t -bottom-[251px] border-accent peer-hover:block bg-white z-50 w-screen -left-[680px] hidden"/>
             <ul className="relative flex items-center space-x-10">
               {HeaderItems.map((name) => (
                 <li key={name}>
