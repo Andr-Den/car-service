@@ -5,10 +5,6 @@ import VK from './shared/VK';
 import Twitter from './shared/Twitter';
 import Instagram from './shared/Instagram';
 
-import vk from '../images/VK.svg';
-import twitter from '../images/twitter.svg';
-import youtube from '../images/youtube.svg';
-import instagram from '../images/instagram.svg';
 import icon from '../images/Icon.svg';
 
 const CentersItems = [

@@ -1,34 +1,7 @@
-import vk from '../images/VK.svg';
-import twitter from '../images/twitter.svg';
-import youtube from '../images/youtube.svg';
-import instagram from '../images/instagram.svg';
 import YouTube from './shared/YouTube';
 import VK from './shared/VK';
 import Twitter from './shared/Twitter';
 import Instagram from './shared/Instagram';
-
-const socialMedia = [
-  {
-    src: vk,
-    alt: 'логотип вконтакте',
-    link: 'https://vk.com'
-  },
-  {
-    src: instagram,
-    alt: 'логотип instagram',
-    link: 'https://instagram.com'
-  },
-  {
-    src: twitter,
-    alt: 'логотип twitter',
-    link: 'https://twitter.com'
-  },
-  {
-    src: youtube,
-    alt: 'логотип youtube',
-    link: 'https://youtube.com'
-  }
-];
 
 const addresses = [
   {
