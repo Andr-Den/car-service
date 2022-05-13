@@ -20,7 +20,7 @@ const CentersItems = [
 
 function Lists() {
   return (
-    <div className="flex space-x-10 mt-10">
+    <div className="flex mt-10 space-x-10 xs:flex-col xs:space-x-0">
       <div className="w-[420px]">
         <p className="text-headline4 text-secondary pb-5 border-b -tracking-[0.01em]">Автоцентры</p>
         <ul className="relative flex flex-col space-y-2.5 my-5 text-link">

@@ -16,8 +16,8 @@ const addresses = [
 
 function Media() {
   return (
-    <div className="flex justify-between items-center border-b border-separator_primary pb-10 mt-[60px]">
-      <div className="flex space-x-2.5">
+    <div className="flex justify-between items-center border-b border-separator_primary pb-10 mt-[60px] lg:flex-col">
+      <div className="flex space-x-2.5 lg:self-start">
         <a 
           href="https://vk.com"
           target="_blank" 
@@ -51,11 +51,11 @@ function Media() {
           <YouTube className="stroke-white group-hover:stroke-primary"/>
         </a>
       </div>
-      <div className="flex justify-between w-[880px]">
+      <div className="flex justify-between w-[880px] lg:justify-start  lg:w-[640px] lg:mt-5 xs:justify-around  xs:w-[345px] space-x-10">
         {addresses.map(({name, address}) => (
           <div className="flex flex-col w-[420px]">
             <p className="text-text3 tracking-[0.02em] font-bold">{name}</p>
-            <p className="text-sm text-secondary w-72">{address}</p>
+            <p className="text-sm text-secondary w-72 xs:w-[170px]">{address}</p>
           </div>
         ))}
       </div>

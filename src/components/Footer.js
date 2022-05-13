@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer className="bg-quaternary pt-[60px] pb-10 text-white">
       <Container>
-        <div className="flex justify-between">
+        <div className="flex justify-between lg:flex-col">
           <ForComm />
           <div>
             <Links />
@@ -17,7 +17,7 @@ function Footer() {
           </div>
         </div>
         <Media />
-        <div className="flex justify-between pt-10 text-separator_primary text-sm">
+        <div className="flex justify-between pt-10 text-sm text-separator_primary">
           <p>&copy; 2022 Специализированный автоцентр</p>
           <p>Дизайн и разработка - <a href="https://media-army.ru" className="text-white">Media Army</a></p>
         </div>
