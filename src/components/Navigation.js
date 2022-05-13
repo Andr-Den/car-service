@@ -42,16 +42,16 @@ const CentersItems = [
 function Navigation() {
 
   return (
-    <div className="border-t border-accent h-5/6">
+    <div className="absolute z-50 w-screen pb-10 bg-white border-t border-accent h-5/6">
       <Container>
         <div className="grid grid-cols-2 mt-10">
           <div className="space-y-5">
             <h2 className="text-headline3 text-accent">+7 (999) 123-45-67</h2>
-            <p className="text-headline4 underline">info@example.ru</p>
-            <p className="text-text1 w-56 text-secondary">Работаем для вас: Ежедневно с 9:00 до 21:00</p>
+            <p className="underline text-headline4">info@example.ru</p>
+            <p className="w-56 text-text1 text-secondary">Работаем для вас: Ежедневно с 9:00 до 21:00</p>
           </div>
           <div className="w-[428px]">
-            <p className="text-headline4 text-secondary pb-5 border-b">Автоцентры</p>
+            <p className="pb-5 border-b text-headline4 text-secondary">Автоцентры</p>
             <ul className="relative flex flex-col space-y-2.5 my-5">
                 {CentersItems.map((name) => (
                   <li key={name}>
@@ -59,7 +59,7 @@ function Navigation() {
                   </li>
                 ))}
             </ul>
-            <a className="flex justify-between items-center pt-5 border-t" href="*">
+            <a className="flex items-center justify-between pt-5 border-t" href="*">
               <p className="text-headline4">Личный кабинет</p>
               <img src={icon} alt="стрелка" className="h-6"/>
             </a>
