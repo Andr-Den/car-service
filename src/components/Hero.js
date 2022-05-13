@@ -9,6 +9,8 @@ import image1 from '../images/Image1.png'
 import image2 from '../images/Image2.png'
 import image3 from '../images/Image3.png'
 
+import './Hero.css'
+
 const images = [
   {
     src: image1,
@@ -37,7 +39,7 @@ const items = [
 
 function Hero() {
   return (
-    <div className="text-white pb-[60px] bg-quaternary relative z-10">
+    <div className="text-white bg-quaternary relative z-10 h-[590px]">
       <Container>
         <div className="relative flex space-x-10">
           <div className="pt-20">
@@ -51,8 +53,10 @@ function Hero() {
             ))}
             <button className="px-5 py-3 rounded-md bg-accent text-primary mt-[60px]"><a href="#services">Смотреть услуги &darr;</a></button>
           </div>
-          <Swiper
-            className="absolute w-[780px] h-full top-0"
+        </div>
+      </Container>
+      <Swiper
+            className="slider-wrapper"
             modules={[Navigation]}
             loop={true}
             navigation={{
@@ -76,8 +80,6 @@ function Hero() {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
-      </Container>
     </div>
   );
 }
