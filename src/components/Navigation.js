@@ -5,6 +5,8 @@ import VK from './shared/VK';
 import Twitter from './shared/Twitter';
 import Instagram from './shared/Instagram';
 
+import './Navigation.css'
+
 import icon from '../images/Icon.svg';
 
 const CentersItems = [
@@ -16,10 +18,18 @@ const CentersItems = [
   'Кузовной ремонт и детейлинг'
 ];
 
+const services = [
+  'О компании',
+  'Гарантии',
+  'Новости',
+  'Акции',
+  'Контакты',
+];
+
 function Navigation() {
 
   return (
-    <div className="absolute z-50 w-screen py-10 bg-white border-t border-accent">
+    <div className="absolute z-50 flex w-screen py-10 bg-white border-t border-accent lg:flex-col-reverse">
       <Container>
         <div className="grid grid-cols-2 mt-10">
           <div className="space-y-5">
@@ -32,7 +42,7 @@ function Navigation() {
             <ul className="relative flex flex-col space-y-2.5 my-5">
                 {CentersItems.map((name) => (
                   <li key={name}>
-                    <span>{name}</span>
+                    <span  className="links">{name}</span>
                   </li>
                 ))}
             </ul>

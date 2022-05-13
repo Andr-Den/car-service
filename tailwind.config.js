@@ -36,6 +36,7 @@ module.exports = {
         tablet0: ['68px', '61px'],
         tablet1: ['44px', '42px'],
         tablet_description: ['24px', '29px'],
+        tablet3: ['32px', '35px'],
         mobile0: ['58px', '52px'],
         mobile1: ['34px', '32px'],
         mobile2: ['28px', '29px'],
